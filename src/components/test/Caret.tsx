@@ -12,7 +12,7 @@ export function Caret({ x, y, height, visible }: CaretProps) {
   return (
     <motion.div
       className="absolute w-[2px] rounded-full animate-caret-blink pointer-events-none"
-      style={{ backgroundColor: 'var(--accent)', height }}
+      style={{ backgroundColor: 'var(--accent)', height, top: 0, left: 0 }}
       animate={{ x, y }}
       transition={{ type: 'spring', stiffness: 500, damping: 32 }}
     />
